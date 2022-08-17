@@ -16,7 +16,7 @@ await async_pipe(
 )
 ```
 
-implementation is quite strange forward
+implementation is quite straight forward
 
 ```typescript
 declare type AsyncFun<I, O> = (input: Awaited<I>) => O | Promise<O>;

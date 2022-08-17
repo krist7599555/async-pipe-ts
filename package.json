@@ -1,0 +1,25 @@
+{
+  "name": "ts-async-pipe",
+  "version": "1.0.0",
+  "description": "minimal async pipe utils function with typescript infer type",
+  "main": "./dist/core.js",
+  "type": "module",
+  "types": "./dist/core.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "pipe",
+    "pipeline",
+    "async",
+    "ts",
+    "typescript",
+    "function",
+    "module"
+  ],
+  "author": "Krist Ponpairin <krist7599555>",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}

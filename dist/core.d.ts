@@ -1,0 +1,24 @@
+declare type SyncFun<I, O> = (input: I) => O;
+declare type AsyncFun<I, O> = (input: Awaited<I>) => O | Promise<O>;
+export declare function sync_pipe<A>(a: A): A;
+export declare function sync_pipe<A, B>(a: A, b: SyncFun<A, B>): B;
+export declare function sync_pipe<A, B, C>(a: A, b: SyncFun<A, B>, c: SyncFun<B, C>): C;
+export declare function sync_pipe<A, B, C, D>(a: A, b: SyncFun<A, B>, c: SyncFun<B, C>, d: SyncFun<C, D>): D;
+export declare function sync_pipe<A, B, C, D, E>(a: A, b: SyncFun<A, B>, c: SyncFun<B, C>, d: SyncFun<C, D>, e: SyncFun<D, E>): E;
+export declare function sync_pipe<A, B, C, D, E, F>(a: A, b: SyncFun<A, B>, c: SyncFun<B, C>, d: SyncFun<C, D>, e: SyncFun<D, E>, f: SyncFun<E, F>): F;
+export declare function sync_pipe<A, B, C, D, E, F, G>(a: A, b: SyncFun<A, B>, c: SyncFun<B, C>, d: SyncFun<C, D>, e: SyncFun<D, E>, f: SyncFun<E, F>, g: SyncFun<F, G>): G;
+export declare function sync_pipe<A, B, C, D, E, F, G, H>(a: A, b: SyncFun<A, B>, c: SyncFun<B, C>, d: SyncFun<C, D>, e: SyncFun<D, E>, f: SyncFun<E, F>, g: SyncFun<F, G>, h: SyncFun<G, H>): Promise<H>;
+export declare function sync_pipe<A, B, C, D, E, F, G, H, I>(a: A, b: SyncFun<A, B>, c: SyncFun<B, C>, d: SyncFun<C, D>, e: SyncFun<D, E>, f: SyncFun<E, F>, g: SyncFun<F, G>, h: SyncFun<G, H>, i: SyncFun<H, I>): Promise<I>;
+export declare function sync_pipe<A, B, C, D, E, F, G, H, I, J>(a: A, b: SyncFun<A, B>, c: SyncFun<B, C>, d: SyncFun<C, D>, e: SyncFun<D, E>, f: SyncFun<E, F>, g: SyncFun<F, G>, h: SyncFun<G, H>, i: SyncFun<H, I>, j: SyncFun<I, J>): Promise<I>;
+export declare function async_pipe<A>(a: A): Promise<A>;
+export declare function async_pipe<A, B>(a: A, b: AsyncFun<A, B>): Promise<B>;
+export declare function async_pipe<A, B, C>(a: A, b: AsyncFun<A, B>, c: AsyncFun<B, C>): Promise<C>;
+export declare function async_pipe<A, B, C, D>(a: A, b: AsyncFun<A, B>, c: AsyncFun<B, C>, d: AsyncFun<C, D>): Promise<D>;
+export declare function async_pipe<A, B, C, D, E>(a: A, b: AsyncFun<A, B>, c: AsyncFun<B, C>, d: AsyncFun<C, D>, e: AsyncFun<D, E>): Promise<E>;
+export declare function async_pipe<A, B, C, D, E, F>(a: A, b: AsyncFun<A, B>, c: AsyncFun<B, C>, d: AsyncFun<C, D>, e: AsyncFun<D, E>, f: AsyncFun<E, F>): Promise<F>;
+export declare function async_pipe<A, B, C, D, E, F, G>(a: A, b: AsyncFun<A, B>, c: AsyncFun<B, C>, d: AsyncFun<C, D>, e: AsyncFun<D, E>, f: AsyncFun<E, F>, g: AsyncFun<F, G>): Promise<G>;
+export declare function async_pipe<A, B, C, D, E, F, G, H>(a: A, b: AsyncFun<A, B>, c: AsyncFun<B, C>, d: AsyncFun<C, D>, e: AsyncFun<D, E>, f: AsyncFun<E, F>, g: AsyncFun<F, G>, h: AsyncFun<G, H>): Promise<H>;
+export declare function async_pipe<A, B, C, D, E, F, G, H, I>(a: A, b: AsyncFun<A, B>, c: AsyncFun<B, C>, d: AsyncFun<C, D>, e: AsyncFun<D, E>, f: AsyncFun<E, F>, g: AsyncFun<F, G>, h: AsyncFun<G, H>, i: AsyncFun<H, I>): Promise<I>;
+export declare function async_pipe<A, B, C, D, E, F, G, H, I, J>(a: A, b: AsyncFun<A, B>, c: AsyncFun<B, C>, d: AsyncFun<C, D>, e: AsyncFun<D, E>, f: AsyncFun<E, F>, g: AsyncFun<F, G>, h: AsyncFun<G, H>, i: AsyncFun<H, I>, j: AsyncFun<I, J>): Promise<I>;
+export {};
+//# sourceMappingURL=core.d.ts.map

@@ -1,10 +1,15 @@
 {
   "name": "ts-async-pipe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "minimal async pipe utils function with typescript infer type",
   "main": "./dist/core.js",
   "type": "module",
   "types": "./dist/core.d.ts",
+  "repository": "github:krist7599555/ts-async-pipe",
+  "bugs": {
+    "url": "https://github.com/krist7599555/ts-async-pipe/issues",
+    "email": "krist7599555@gmail.com"
+  },
   "scripts": {
     "build": "tsc"
   },

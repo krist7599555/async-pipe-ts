@@ -25,7 +25,7 @@ export function sync_pipe<A, B, C, D, E, F, G, H, I, J>(a: A, b: SyncFun<A, B>, 
 export function sync_pipe(init: any, ...fns: any[]) {
   let it = init;
   for (const fn of fns) {
-    it = fn(init);
+    it = fn(it);
   }
   return it;
 }
